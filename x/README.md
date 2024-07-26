@@ -18,6 +18,10 @@ This directory contains the code for your chain custom modules.
 - score ([2]uint)
 
 
+## Param
+
+
+
 ## Msg service
 
 
@@ -39,6 +43,27 @@ This directory contains the code for your chain custom modules.
 ### GetGame
 
 - gameNumber(uint)
+
+### GetParams
+
+## Events
+
+### EventCreateGame
+
+- gameNumber
+- playerA (adress)
+- playerB (address)
+
+### EventEndGame
+
+- gameNumber(uint)
+- status(string)
+
+### EventMakeMove
+
+-gameNumber (uint)
+-player (address)
+- move (string)
 
 
 

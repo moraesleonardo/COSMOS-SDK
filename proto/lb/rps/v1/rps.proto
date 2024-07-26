@@ -1,0 +1,19 @@
+syntax = "proto3";
+package lb.rps.v1;
+
+option go_package = "github.com/0xlb/rps-chain/x/rps/types";
+
+import "cosmos_proto/cosmos.proto";
+
+
+// Params defines the parameters of the module.
+message Params { }
+
+//Game defines the Rock, Paper & Scissors game object
+message Game {
+    uint64 game_number = 1;
+    string player_a = 2 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+    string player_b = 3 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+}
+
+ 
